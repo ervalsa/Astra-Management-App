@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "374173167732",
+    "project_id": "astra-motor-management",
+    "storage_bucket": "astra-motor-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374173167732:android:3bd2752c6b074bb411e121",
+        "android_client_info": {
+          "package_name": "com.astra.astramotormangement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374173167732-0u7ubu9vksue3i7tgs1gt54718n2270u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPLJBIctW6A2AR3Vt0FJ390yuj0SSEI6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374173167732-0u7ubu9vksue3i7tgs1gt54718n2270u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

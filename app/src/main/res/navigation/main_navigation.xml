@@ -6,13 +6,13 @@
     app:startDestination="@id/navigation_dealer">
     <fragment
         android:id="@+id/navigation_dealer"
-        android:name="com.astra.astramotormangement.DealerFragment"
+        android:name="com.astra.astramotormangement.ui.dealer.DealerFragment"
         android:label="fragment_dealer"
         tools:layout="@layout/fragment_dealer" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.astra.astramotormangement.ProfileFragment"
+        android:name="com.astra.astramotormangement.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

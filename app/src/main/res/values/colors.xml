@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue_astra">#FF1455A3</color>
+    <color name="red_astra">#FFDD2C32</color>
     <color name="yellow">#FFFFC05C</color>
     <color name="background_white">#FFF8F8F8</color>
 </resources>
