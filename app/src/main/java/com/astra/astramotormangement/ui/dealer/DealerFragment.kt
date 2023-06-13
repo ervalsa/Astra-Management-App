@@ -5,17 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import com.astra.astramotormangement.R
 import com.astra.astramotormangement.databinding.FragmentDealerBinding
 import com.astra.astramotormangement.utils.UserPreference
+import com.astra.astramotormangement.utils.Utils
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class DealerFragment : Fragment() {
 
     private var _binding: FragmentDealerBinding? = null
     private val binding get() = _binding!!
-
-    lateinit var preference: UserPreference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,5 +28,32 @@ class DealerFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val sectionsPagerAdapter = SectionsPagerAdapter(this)
+        binding.viewPager.adapter = sectionsPagerAdapter
+        TabLayoutMediator(binding.tabs, binding.viewPager) { tab, position ->
+            tab.text = resources.getString(TAB_TITLES[position])
+        }.attach()
+
+        val tabs = binding.tabs.getChildAt(0) as ViewGroup
+        for (i in 0 until tabs.childCount) {
+            val tab = tabs.getChildAt(i)
+            val layoutParams = tab.layoutParams as LinearLayout.LayoutParams
+            layoutParams.marginEnd = Utils.dpToPx(8)
+            tab.layoutParams = layoutParams
+            binding.tabs.requestLayout()
+        }
+    }
+
+    companion object {
+        private val TAB_TITLES = intArrayOf(
+            R.string.tab_text_1,
+            R.string.tab_text_2,
+            R.string.tab_text_3,
+            R.string.tab_text_4,
+            R.string.tab_text_5,
+            R.string.tab_text_6,
+            R.string.tab_text_7,
+        )
     }
 }

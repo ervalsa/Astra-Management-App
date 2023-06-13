@@ -2,4 +2,12 @@
     <string name="app_name">Astra Motor Management</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_text_1">Balikpapan</string>
+    <string name="tab_text_2">Berau</string>
+    <string name="tab_text_3">Bulungan</string>
+    <string name="tab_text_4">Nunukan</string>
+    <string name="tab_text_5">Tarakan</string>
+    <string name="tab_text_6">PPU</string>
+    <string name="tab_text_7">Paser</string>
 </resources>
