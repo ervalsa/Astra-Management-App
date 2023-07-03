@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.astra.astramotormangement.R
 import com.astra.astramotormangement.databinding.FragmentDealerBinding
-import com.astra.astramotormangement.utils.UserPreference
 import com.astra.astramotormangement.utils.Utils
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -47,13 +46,13 @@ class DealerFragment : Fragment() {
 
     companion object {
         private val TAB_TITLES = intArrayOf(
-            R.string.tab_text_1,
-            R.string.tab_text_2,
-            R.string.tab_text_3,
-            R.string.tab_text_4,
-            R.string.tab_text_5,
-            R.string.tab_text_6,
-            R.string.tab_text_7,
+            R.string.tab_text_balikpapan,
+            R.string.tab_text_berau,
+            R.string.tab_text_bulungan,
+            R.string.tab_text_nunukan,
+            R.string.tab_text_tarakan,
+            R.string.tab_text_ppu,
+            R.string.tab_text_paser,
         )
     }
 }

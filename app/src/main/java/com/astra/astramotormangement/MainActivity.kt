@@ -1,9 +1,8 @@
 package com.astra.astramotormangement
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.astra.astramotormangement.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView

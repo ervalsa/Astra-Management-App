@@ -33,9 +33,7 @@ class ProfileFragment : Fragment() {
 
         preference = UserPreference(requireContext())
 
-        binding.tvUserName.text = preference.getValues("username")
-
-        Log.e("Nama", "${preference.getValues("nama")}")
+        binding.tvUserName.text = preference.getValues("nama")
 
         binding.btnLogout.setOnClickListener {
             preference.setValues("status", "0")
